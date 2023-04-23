@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: "Poppins", sans-serif;
+  /* scroll-behavior: smooth; */
+}
+
+body {
+  @apply bg-black text-white overflow-x-hidden;
+}
+
+.container__section {
+  @apply py-[12px] px-[20px] max-w-[1640px];
+}
+
+.heading {
+  @apply text-[25px] sm:text-[35px] md:text-[65px] font-semibold;
+}
+
+.active {
+  @apply text-blue;
+}
+
+.hero__gradient {
+  @apply inline-block;
+  background: -webkit-linear-gradient(90deg, #fe6783 1.9%, #ffbf84 97.1%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.step {
+  @apply inline-block text-blue text-[12px] sm:text-[16px] md:text-[20px];
+}
+
+.paragraph {
+  @apply text-[14px] sm:text-[18px] max-w-[580px];
+}
+
+.about__para {
+  @apply text-[14px] sm:text-[18px] max-w-[750px];
+}
+
+.marker {
+  @apply inline-flex justify-center items-center shrink-0 w-[23px] h-[23px] text-white bg-slate-500 rounded-full text-[16px];
+}
+
+.step__two-heading {
+  @apply font-semibold text-[30px] lg:text-[60px];
+}
+
+.team__carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.active__card {
+  @apply bg-blue text-white !important;
+}
+
+.input {
+  @apply outline-none border-none bg-inherit text-[14px] font-normal w-[calc(100%-40px)] px-[12px] py-[8px];
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px black inset !important;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: white !important;
+}
