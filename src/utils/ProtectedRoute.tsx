@@ -7,12 +7,14 @@ interface ProtectedRouteProps {
   children: ReactNode;
 }
 
-export const ProtectedRoute = ({ children }: ProtectedRouteProps) => {
+export const ProtectedRoute = ({
+  children,
+}: ProtectedRouteProps): JSX.Element | null => {
   const location = useLocation();
   const { user } = useAuth() as AuthContextValue;
 
   if (!user) {
     return <Navigate to="/login" state={{ from: location }} />;
   }
-  return children;
+  return <>{children}</>;
 };

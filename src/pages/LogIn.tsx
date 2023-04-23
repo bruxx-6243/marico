@@ -10,7 +10,6 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { InputsProps } from "./SignUp";
-import { auth } from "../config/firebaseConfig";
 import { useAuth } from "../hook/useAuth";
 import { AuthContextValue } from "../context/AuthProvider";
 
